@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container p-8 flex justify-between">
         <p className="text-slate-600">Create by mendy sodakevitz @All rights reserved.</p>
         <div className="flex flex-col-2 items-center space-x-3">
-        <span>החתונה של חני ומענדי</span>
+        <span className="hidden md:inline">החתונה של מענדי וחני</span>
           <Image
               src="/images/logo.jpg"
               alt="wedding icon"

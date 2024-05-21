@@ -14,7 +14,7 @@ const AnimatedNumbers = dynamic(
 
 const AchievementsSection = () => {
 
-  const targetDate = new Date('2024-07-16T18:59:59');
+  const targetDate = new Date('2024-07-16T18:00:00');
   const [timeLeft, setTimeLeft] = useState(
     Math.floor((targetDate.getTime() - Date.now()) / 1000)
   );
@@ -77,10 +77,10 @@ const achievementsList = [
 
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <h2 className="text-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12">
-      : החתונה תערך בעוד
+      <h2 className="text-center text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-4 md:mb-12">
+      :החתונה תערך בעוד
       </h2>
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+      <div className="border-[#33353F] border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
           return (
             <div

@@ -25,3 +25,44 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* .perspective {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+} */
+
+
+.lid-one {
+  @apply border-t-blue-400;
+}
+
+.lid-two {
+  @apply border-t-blue-700;
+  transform: rotateX(90deg);
+}
+
+.letter {
+  transform: translateY(0);
+}
+
+.wrapper:hover .lid-one {
+  transform: rotateX(90deg);
+  transition-delay: 0s;
+}
+
+.wrapper:hover .lid-two {
+  transform: rotateX(180deg);
+  transition-delay: 0.25s;
+}
+
+.wrapper:hover .letter {
+  transform: translateY(-50px);
+  transition-delay: 0.5s;
+}

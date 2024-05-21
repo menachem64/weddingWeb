@@ -61,9 +61,23 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:mt-12 pt-24 gap-4 relative"
+      className="block md:grid md:grid-cols-2 my-2 md:mt-12 pt-24 gap-4 relative"
     >
-         <div className="text-right">
+      <div>
+         <div className="block md:hidden text-center justify-center">
+        <h5 className="text-xl font-bold text-white my-2">
+          !תכתבו לנו ברכה
+        </h5>
+        <p className="text-[#ADB7BE] mb-6 md:mb-0 text-base lg:text-lg">
+          {" "}
+           נשמח מאוד לקבל את ברכתכם ובעז"ה נפרסם את כל הברכות כאן באתר, אפשר לשלוח לנו כאן גם שאלות ועדכונים
+        </p>
+        <div className="socials flex flex-row gap-2 items-start">
+        <Link href="https://gmail.com">
+            <Image src={GmailIcon} alt="gmail Icon" width={50}/>
+          </Link>
+        </div>
+        </div>
         {emailSubmitted ? (
           <p className="text-green-500 text-2xl mt-2 font-semibold">
             !הברכה שלכם נשלחה 
@@ -73,9 +87,9 @@ const EmailSection = () => {
             <div className="mb-6">
               <label
                 htmlFor="name"
-                className="text-white block mb-2 text-sm font-medium"
+                className="text-white text-right block mb-2 text-sm font-medium"
               >
-               השם שלכם
+               מאת
               </label>
               <input
                 name="name"
@@ -83,7 +97,7 @@ const EmailSection = () => {
                 id="name"
                 required
                 className="text-right bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="שם"
+                placeholder="השם שלכם"
               />
             </div>
             <div className="mb-6">
@@ -107,7 +121,7 @@ const EmailSection = () => {
                 htmlFor="subject"
                 className="text-right text-white block text-sm mb-2 font-medium"
               >
-                כותרת
+                נושא
               </label>
               <input
                 name="subject"
@@ -115,7 +129,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="text-right bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="!מזל טוב"
+                placeholder="...'ברכה / עדכון / שאלה וכד"
               />
             </div>
             <div className="mb-6">
@@ -145,6 +159,7 @@ const EmailSection = () => {
       </div>
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10 text-right">
+        <div className="hidden md:block">
         <h5 className="text-xl font-bold text-white my-2">
           !תכתבו לנו ברכה
         </h5>
@@ -163,17 +178,21 @@ const EmailSection = () => {
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link> */}
         </div>
+        </div>
         <div>
-        <p className="text-[#ADB7BE] mb-4 max-w-md ml-[150px] mt-[200px]">
-          {" "} (; bit או zelleניתן לשלוח לנו ברכות גם ב       </p>
-        <div className="socials flex flex-row gap-2 justify-end">
-        <div className="socials flex flex-row gap-2 justify-end">
-            <p className="text-[#ADB7BE] mt-5">0547611046</p>
+        <p className="text-[#ADB7BE] font-bold text-end justify-end md:text-end md:justify-end mb-4 max-w-md ml-0 mt-[60px] md:ml-[150px] md:mt-[200px]">
+        {" "}ניתן לשלוח לנו ברכות  
+        
+          <span className="block">(; bit או zelleגם ב</span>
+         </p>
+        <div className="socials block md:flex md:flex-row md:gap-2 justify-end">
+        <div className="socials flex flex-row gap-2 justify-end md:mt-0">
+        <p className="text-[#ADB7BE] mt-5 text-xs md:text-base">0547611046</p>
             <Image src="/bit-icon.png" alt="gmail Icon" width={50} height={50}/>
           </div>
           <div className="socials flex flex-row gap-2 justify-end">
-            <p className="text-[#ADB7BE] mt-5">mnsudak@gmail.com</p>
-            <Image src={zelleIcon} alt="zelle Icon" width={50} height={50}/>
+            <p className="text-[#ADB7BE] mt-5 text-xs md:text-base">mnsudak@gmail.com</p>
+            <Image src={zelleIcon} alt="zelle Icon" className="block md:flex" width={50} height={50}/>
           </div>
          </div>
         </div>
