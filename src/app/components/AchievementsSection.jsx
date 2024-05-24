@@ -77,10 +77,10 @@ const achievementsList = [
 
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <h2 className="text-center text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-4 md:mb-12">
+      <h2 className="text-center text-3xl md:text-5xl font-bold bg-clip-text bg-gradient-to-r text-[#8B716A] mt-4 mb-4 md:mb-12">
       :החתונה תערך בעוד
       </h2>
-      <div className="border-[#33353F] border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+      <div className="bg-[#cd9484] #D3836D rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
           return (
             <div
@@ -108,7 +108,7 @@ const achievementsList = [
                   {achievement.postfix}
                 </h2>
               )}
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-white text-base">{achievement.metric}</p>
             </div>
           );
         })}

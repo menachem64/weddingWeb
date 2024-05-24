@@ -1,53 +1,52 @@
 "use client";
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-// // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import styles from './Blessings.module.css'
+import styles from "./Blessings.module.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const BlessingsPage = () => {
-
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 
   const Blessings = [
     {
       text: " מזל טוב לחני ומענדי! שתזכו לחיים מתוקים כמו הדבש, אהבה עמוקה כמו האוקיינוס, ושלום ושמחה שישרים כמו הרים",
-      backgroundColor: "radial-gradient(circle, rgba(255,229,229,1) 0%, rgba(255,182,193,1) 50%, rgba(255,105,97,1) 100%)",
-      from: "ChatGPT 3.5"
-    },
-    { 
-      text: "מזל טוב!! ברגע זה שבו הקיץ משתיק את קולו והלב רוקד בחופש, מתחילים אתם את סיפור האהבה המופלא שלכם. תהיה כל רגע בו כמו תרגיל בשורות אינסופיות של פואמות מרגשות",
-      backgroundColor: "radial-gradient(circle, rgba(229,229,255,1) 0%, rgba(179,179,255,1) 50%, rgba(97,97,255,1) 100%)",
-      from: "רבקה ליפסקר"
+      backgroundColor: "#cd9484",
+      from: "ChatGPT 3.5",
     },
     {
-      text: "🎂🥂💕!מזל טוב לחני ומענדי! ברכות חמות לכם. תחיו את הרגעים המיוחדים, תקשיבו ללב ותמשיכו להפתח יחד באהבה וכבוד. שתהיה לכם חיים מתוקים כמו עוגת חתונה",
-      backgroundColor: "radial-gradient(circle, rgba(229,255,229,1) 0%, rgba(179,255,179,1) 50%, rgba(97,255,183,1) 100%)",
-      from: "Copilot"
+      text: "מזל טוב!! ברגע זה שבו הקיץ משתיק את קולו והלב רוקד בחופש, מתחילים אתם את סיפור האהבה המופלא שלכם. תהיה כל רגע בו כמו תרגיל בשורות אינסופיות של פואמות מרגשות",
+      backgroundColor: "#8B716A",
+      from: "רבקה ליפסקר",
+    },
+    {
+      text: "!מזל טוב לחני ומענדי! ברכות חמות לכם. תחיו את הרגעים המיוחדים, שהיו לכם חיים מתוקים כמו עוגת חתונה",
+      backgroundColor: "#B48B58",
+      from: "Copilot",
     },
     {
       text: "ביום הגדול הזה, כשהשמש זורחת והלב פועם בגאווה, אנו שמחות לברך אתכם באהבה ובשמחה. תהיו מאושרים כמו שאתם, ויהיו ימיכם מלאים באהבה, שלום ושפע",
-      backgroundColor: "radial-gradient(circle, rgba(255,255,229,1) 0%, rgba(255,255,179,1) 50%, rgba(255,223,97,1) 100%)",
-      from: "רישי ושרי ליפסקר"
-    }
+      backgroundColor: "#302f2f",
+      from: "רישי ושרי ליפסקר",
+    },
   ];
 
   return (
-    <section id="blessings mt-5 md:mt-0">
-      <h2 className="text-center text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 md:mb-12">
+    <section id="blessings" className="mt-5 md:mt-0">
+      <h2 className="text-center text-4xl md:text-5xl font-bold bg-clip-text bg-gradient-to-r text-[#B48B58] mt-4 mb-8 md:mb-12">
         ברכות ואיחולים
       </h2>
       <Swiper
@@ -67,8 +66,11 @@ const BlessingsPage = () => {
       >
         {Blessings.map((blessing, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col text-center justify-center items-center px-5 h-[230px] w-[280px] md:w-auto md:h-[300px] md:mx-[150px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl" style={{ background: blessing.backgroundColor }}>
-              <h1 className="text-sm md:text-3xl p-1 font-bold bg-clip-text bg-gradient-to-r text-slate-800 hover:text-slate-600 m-4">
+            <div
+              className="flex flex-col text-center justify-center items-center px-5 py-0 h-auto w-auto md:w-auto md:h-[300px] md:mx-[150px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl"
+              style={{ background: blessing.backgroundColor }}
+            >
+              <h1 className="text-xs md:text-3xl px-[25px] py-[10px] md:p-1 font-bold bg-clip-text bg-gradient-to-r text-slate-100 hover:text-slate-200 m-2 md:m-4">
                 {blessing.text}
                 <span className="block mt-4 text-lg md:text-xl">{blessing.from}</span>
               </h1>

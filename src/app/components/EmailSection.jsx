@@ -65,10 +65,10 @@ const EmailSection = () => {
     >
       <div>
          <div className="block md:hidden text-center justify-center">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-xl font-bold text-[#B48B58] my-2">
           !תכתבו לנו ברכה
         </h5>
-        <p className="text-[#ADB7BE] mb-6 md:mb-0 text-base lg:text-lg">
+        <p className="text-[#ADB7BE] mb-6 md:mb-0 font-bold text-xl lg:text-lg">
           {" "}
            נשמח מאוד לקבל את ברכתכם ובעז"ה נפרסם את כל הברכות כאן באתר, אפשר לשלוח לנו כאן גם שאלות ועדכונים
         </p>
@@ -87,7 +87,7 @@ const EmailSection = () => {
             <div className="mb-6">
               <label
                 htmlFor="name"
-                className="text-white text-right block mb-2 text-sm font-medium"
+                className="text-[#B48B58] font-medium text-right block mb-2 text-sm "
               >
                מאת
               </label>
@@ -96,14 +96,14 @@ const EmailSection = () => {
                 type="name"
                 id="name"
                 required
-                className="text-right bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="font-medium text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-800 text-sm rounded-lg block w-full p-2.5"
                 placeholder="השם שלכם"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="email"
-                className="text-right text-white block mb-2 text-sm font-medium"
+                className="text-right text-[#B48B58] block mb-2 text-sm font-medium"
               >
                 מייל או מספר הפאלפון 
               </label>
@@ -112,14 +112,14 @@ const EmailSection = () => {
                 type="email"
                 id="email"
                 required
-                className="text-right bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="blessing@gmail.com"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="subject"
-                className="text-right text-white block text-sm mb-2 font-medium"
+                className="text-right text-[#B48B58] block text-sm mb-2 font-medium"
               >
                 נושא
               </label>
@@ -128,28 +128,29 @@ const EmailSection = () => {
                 type="text"
                 id="subject"
                 required
-                className="text-right bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-800 text-sm rounded-lg block w-full p-2.5"
                 placeholder="...'ברכה / עדכון / שאלה וכד"
               />
             </div>
             <div className="mb-6">
               <label
                 htmlFor="message"
-                className="text-right text-white block text-sm mb-2 font-medium"
+                className="text-right text-[#B48B58] block text-sm mb-2 font-medium"
               >
                 ברכה
               </label>
               <textarea
                 name="message"
+                type="text"
                 id="message"
                 required
-                className="text-right bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="(אם אתם רוצים שנפרסם באתר אז עד שלושים מילים)...מלא ברכות"
+                className="text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-800 text-sm rounded-lg block w-full p-2.5"
+                placeholder="(אם אתם רוצים שנפרסם באתר אז עד עשרים מילים)...מלא ברכות"
               />
             </div>
             <button
               type="submit"
-              className="flex items-center justify-center bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="flex items-center justify-center font-bold bg-[#cd9484] hover:bg-[#ab7566] text-white py-2.5 px-5 rounded-lg w-full"
             >
               {isLoading && <Loader2 className="h-4 w-4 animate-spin"/>
                ||  "שלח ברכה"}
@@ -157,13 +158,13 @@ const EmailSection = () => {
           </form>
         )}
       </div>
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      {/* <div className="z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#D3836D] to-transparent rounded-full h-80 w-80 blur-lg absolute bottom-4 right-4 transform translate-x-1/2 translate-y-1/2"></div> */}
       <div className="z-10 text-right">
         <div className="hidden md:block">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-3xl font-bold text-[#B48B58] my-2">
           !תכתבו לנו ברכה
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md ml-[150px]">
+        <p className="text-[#8B716A] mb-4 max-w-md ml-[150px] font-bold text-2xl">
           {" "}
            נשמח מאוד לקבל את ברכתכם ובעז"ה נפרסם את כל הברכות כאן באתר, אפשר לשלוח לנו כאן גם שאלות ועדכונים
         </p>
@@ -180,18 +181,18 @@ const EmailSection = () => {
         </div>
         </div>
         <div>
-        <p className="text-[#ADB7BE] font-bold text-end justify-end md:text-end md:justify-end mb-4 max-w-md ml-0 mt-[60px] md:ml-[150px] md:mt-[200px]">
+        <p className="text-[#8B716A] text-xl font-bold text-end justify-end md:text-end md:justify-end mb-4 max-w-md ml-0 mt-[60px] md:ml-[150px] md:mt-[200px]">
         {" "}ניתן לשלוח לנו ברכות  
         
           <span className="block">(; bit או zelleגם ב</span>
          </p>
         <div className="socials block md:flex md:flex-row md:gap-2 justify-end">
         <div className="socials flex flex-row gap-2 justify-end md:mt-0">
-        <p className="text-[#ADB7BE] mt-5 text-xs md:text-base">0547611046</p>
+        <p className="text-[#8B716A] mt-5 text-xs md:text-xl font-bold">0547611046</p>
             <Image src="/bit-icon.png" alt="gmail Icon" width={50} height={50}/>
           </div>
           <div className="socials flex flex-row gap-2 justify-end">
-            <p className="text-[#ADB7BE] mt-5 text-xs md:text-base">mnsudak@gmail.com</p>
+            <p className="text-[#8B716A] mt-5 text-xs md:text-xl font-bold">mnsudak@gmail.com</p>
             <Image src={zelleIcon} alt="zelle Icon" className="block md:flex" width={50} height={50}/>
           </div>
          </div>

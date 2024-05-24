@@ -6,10 +6,10 @@ import { ToastProvider } from './components/toaster-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'wedding web',
-  description: 'The platform for making your next appointment.',
+  title: 'החתונה שלנו',
+  description: 'החתונה של מענדי וחני',
   icons: {
-    icon: '/images/professionals-icon.png'
+    icon: '/images/logo.jpg'
   }
 }
 
