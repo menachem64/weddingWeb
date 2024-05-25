@@ -188,11 +188,11 @@ const EmailSection = () => {
          </p>
         <div className="socials block md:flex md:flex-row md:gap-2 justify-end">
         <div className="socials flex flex-row gap-2 justify-end md:mt-0">
-        <p className="text-[#8B716A] mt-5 text-xs md:text-xl font-bold">0547611046</p>
+        <p className="text-[#8B716A] mt-5 text-xs md:text-sm xl:text-xl font-bold">0547611046</p>
             <Image src="/bit-icon.png" alt="gmail Icon" width={50} height={50}/>
           </div>
           <div className="socials flex flex-row gap-2 justify-end">
-            <p className="text-[#8B716A] mt-5 text-xs md:text-xl font-bold">mnsudak@gmail.com</p>
+            <p className="text-[#8B716A] mt-5 text-xs mdmd:text-sm xl:text-xl font-bold">mnsudak@gmail.com</p>
             <Image src={zelleIcon} alt="zelle Icon" className="block md:flex" width={50} height={50}/>
           </div>
          </div>

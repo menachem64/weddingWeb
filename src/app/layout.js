@@ -6,12 +6,13 @@ import { ToastProvider } from './components/toaster-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'החתונה שלנו',
+  title: 'החתונה',
   description: 'החתונה של מענדי וחני',
   icons: {
-    icon: '/images/logo.jpg'
+    icon: '/favicon.ico'
   }
 }
+
 
 export default function RootLayout({ children }) {
   return (

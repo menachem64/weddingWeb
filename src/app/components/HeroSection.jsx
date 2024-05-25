@@ -19,7 +19,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="col-span-12 sm:col-span-4 place-self-center mt-4 sm:mt-0 text-center sm:text-left"
         >
-          <div className="rounded-full w-[250px] h-[200px] sm:w-[200px] sm:h-[200px] xl:w-[400px] xl:h-[300px] mt-7 xl:mt-0 mx-auto sm:mx-0 mb-0 md:mb-10">
+          <div className="rounded-full w-[250px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[240px] lg:h-[240px] xl:w-[400px] xl:h-[300px] mt-7 sm:mt-10 lg:mt-0 mx-auto sm:mx-0 mb-0 md:mb-10">
   <Image
     src="/weddingLogo2.png"
     alt="logo image"
@@ -60,7 +60,7 @@ const HeroSection = () => {
           wrapper="span"
           speed={50}
           repeat={Infinity}
-          className="font-sans text-[#D3836D] text-center md:text-right whitespace-nowrap"
+          className="font-sans text-[#D3836D] text-center md:text-right whitespace-nowrap mb-0 md:mb-[100px] lg:mb-0"
           style={{ direction: 'rtl' }}
         />
       </div>
