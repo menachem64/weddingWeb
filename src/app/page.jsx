@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import FlipCard from "./components/FlipCard";
 //import ProjectsSection from "./components/ProjectsSection";
-import Blessings from "./components/blessings";
+import Blessings from "./components/Blessings";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
