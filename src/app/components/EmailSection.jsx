@@ -70,7 +70,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-6 md:mb-0 font-bold text-xl lg:text-lg">
           {" "}
-           נשמח מאוד לקבל את ברכתכם ובעז"ה נפרסם את כל הברכות כאן באתר, אפשר לשלוח לנו כאן גם שאלות ועדכונים
+           נשמח מאוד לקבל את ברכתכם ובעז&quot;ה נפרסם את כל הברכות כאן באתר, אפשר לשלוח לנו כאן גם שאלות ועדכונים
         </p>
         <div className="socials flex flex-row gap-2 items-start">
         <Link href="https://gmail.com">

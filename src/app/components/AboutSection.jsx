@@ -10,7 +10,7 @@ const TAB_DATA = [
     content: (
       // <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12">B בביתר עלית גבעה</p>
       <div className="bg-[#cd9484]  text-center justify-end p-2 mx-[10px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-        <h1 className="text-3xl font-bold  text-slate-100 hover:text-slate-100  m-4">בביתר עלית רח' החוזה מלובלין</h1>
+        <h1 className="text-3xl font-bold  text-slate-100 hover:text-slate-100  m-4">בביתר עלית רח&apos; החוזה מלובלין</h1>
       </div>
     ),
   },
@@ -20,7 +20,7 @@ const TAB_DATA = [
     content: (
       // <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 mt-4 mb-8 md:mb-12">על יד אוהל כ"ק אדמו"ר</p>
       <div className="bg-[#cd9484]  text-center justify-end p-2 mx-[10px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-       <h1 className="text-3xl font-bold bg-clip-text bg-gradient-to-r  text-slate-100 hover:text-slate-100 m-4">על יד אוהל כ"ק אדמו"ר</h1>
+       <h1 className="text-3xl font-bold bg-clip-text bg-gradient-to-r  text-slate-100 hover:text-slate-100 m-4">על יד אוהל כ&quot;ק אדמו&quot;ר</h1>
     </div>
     ),
   },
