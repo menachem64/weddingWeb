@@ -55,8 +55,8 @@ const AboutSection = () => {
         <div className="mt-4 mb-7 md:mt-0 md:mb-0 flex flex-col h-full text-right">
           <h2 className="text-4xl font-bold bg-clip-text bg-gradient-to-r text-[#B48B58] mb-4">.החתונה שלנו</h2>
           <p className="text-[#8B716A] mb-8 md:mb-0 font-bold lg:text-xl">
-                בעזרת השם ביום שלישי שהוכפל בו כי טוב י' תמוז ה'תשפ"ד בשעה שש בערב
-                נחגוג בגן האירועים בבית רבקה אשר בכפר חב"ד ב' את החתונה 
+          בעזרת השם ביום שלישי שהוכפל בו כי טוב י&apos; תמוז ה&apos;תשפ&quot;ד בשעה שש בערב
+                נחגוג בגן האירועים בבית רבקה אשר בכפר חב&quot;ד ב&apos; את החתונה 
                 ואנחנו מצפים ומחכים לפגוש אתכם באירוע,
                 מצורף כאן המיקום של האולם בגוגל מפות
           </p>
