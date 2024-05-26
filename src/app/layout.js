@@ -9,7 +9,7 @@ export const metadata = {
   title: 'החתונה',
   description: 'החתונה של מענדי וחני',
   icons: {
-    icon: '/W.ico'
+    icon: '/w.ico'
   }
 }
 
