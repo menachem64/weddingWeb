@@ -85,7 +85,7 @@ const HeroSection = () => {
       className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br bg-[#8B716A] hover:bg-slate-800 text-white mt-0 md:mt-3"
     >
       <span className=" font-bold block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-        שמור ביומן
+        לשמור ביומן
       </span>
     </Link>
             </div> 
