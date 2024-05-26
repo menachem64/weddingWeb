@@ -137,7 +137,7 @@ const EmailSection = () => {
                 htmlFor="message"
                 className="text-right text-[#B48B58] block text-sm mb-2 font-medium"
               >
-                ברכה
+                טקסט
               </label>
               <textarea
                 name="message"

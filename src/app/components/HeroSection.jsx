@@ -73,7 +73,7 @@ const HeroSection = () => {
                 .אתר החתונה של מענדי וחני
             </p>
             </div> */}
-            <div className="flex flex-row items-center mt-[60px] md:m-0">
+             <div className="flex flex-row items-center mt-[60px] md:m-0">
                 <Link
                     href="/#contact"
                     className="inline-block font-bold px-6 py-3 rounded-full bg-gradient-to-br bg-[#8B716A] hover:bg-[#7a6058] text-white mr-4 mt-0 md:mt-3"
@@ -82,13 +82,13 @@ const HeroSection = () => {
                 </Link>
                 <Link
       href="https://www.google.com/calendar/render?action=TEMPLATE&text=החתונה של חני ומענדי&dates=20240716T190000Z%2F20240716T230000Z"
-      className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br bg-[#8B716A] hover:bg-slate-800 text-white mt-3"
+      className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br bg-[#8B716A] hover:bg-slate-800 text-white mt-0 md:mt-3"
     >
       <span className=" font-bold block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
         שמור ביומן
       </span>
     </Link>
-            </div>
+            </div> 
         </motion.div>
     </div>
 </section>
