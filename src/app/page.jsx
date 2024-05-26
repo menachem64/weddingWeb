@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import FlipCard from "./components/FlipCard";
 //import ProjectsSection from "./components/ProjectsSection";
-import Blessings from "./components/Blessings";
+import BlessingsPage from "./components/Blessings";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
@@ -28,7 +28,7 @@ export default function startPage2() {
         <AchievementsSection className={heebo.className}/>
         <AboutSection  className={heebo.className}/>
         <FlipCard className={heebo.className}/>
-        <Blessings className={heebo.className}/>
+        <BlessingsPage className={heebo.className}/>
         <EmailSection  className={heebo.className}/>
       </div>
       <Footer />
