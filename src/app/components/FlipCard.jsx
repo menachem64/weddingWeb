@@ -17,7 +17,7 @@ const FlipCard = () => {
             <div className={`${styles.lid} ${styles.one}`}></div>
             <div className={`${styles.lid} ${styles.two}`}></div>
             <div className={styles.letter}>
-              <img src={"/invitation.jpeg"} alt="invitation Image" className="h-[200px] md:h-[250px] w-[800px]" />
+              <img src={"/invitation.jpg"} alt="invitation Image" className="h-[200px] md:h-[250px] w-[800px]" />
             </div>
             <div className={styles.envelope}></div>
           </div>
