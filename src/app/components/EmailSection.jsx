@@ -153,7 +153,7 @@ const EmailSection = () => {
               className="flex items-center justify-center font-bold bg-[#cd9484] hover:bg-[#ab7566] text-white py-2.5 px-5 rounded-lg w-full"
             >
               {isLoading && <Loader2 className="h-4 w-4 animate-spin"/>
-               ||  "שלח ברכה"}
+               ||  "שליחה"}
             </button>
           </form>
         )}
