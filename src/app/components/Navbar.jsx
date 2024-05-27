@@ -12,6 +12,10 @@ const navLinks = [
     path: "#contact",
   },
   {
+    title: "איחולים",
+    path: "#blessings",
+  },
+  {
     title: "הזמנה",
     path: "#projects",
   },
@@ -19,10 +23,7 @@ const navLinks = [
     title: "מיקום",
     path: "#about",
   },
-  {
-    title: "איחולים",
-    path: "#blessings",
-  },
+ 
 ];
 
 const Navbar = () => {
