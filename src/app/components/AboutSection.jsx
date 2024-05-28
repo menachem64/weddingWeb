@@ -62,7 +62,7 @@ const AboutSection = () => {
           </p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.7900025651984!2d34.86726042607474!3d31.993707723607045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502caa7c87cf23d%3A0x670cb3df33138ab0!2z15DXldec150g15DXmdeo15XXoteZ150g15HXmdeqINeo15HXp9eUINeb16TXqCDXl9eR15M!5e0!3m2!1siw!2sil!4v1715621747233!5m2!1siw!2sil"
             className="block md:hidden w-[240px] h-[200px] md:w-[400px] md:h-[400px]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div className="flex flex-row justify-end text-[13px] text-center md:text-xl md:text-end mt-20 w-auto">
+          <div className="flex flex-row justify-end text-center text-[13px] md:text-[16px] xl:text-xl md:text-end mt-20 w-auto">
             <TabButton
               selectTab={() => handleTabChange("ShabatSevaBrachot")}
               active={tab === "ShabatSevaBrachot"}

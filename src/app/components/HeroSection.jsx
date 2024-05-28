@@ -12,14 +12,14 @@ const HeroSection = () => {
 
   return (
     <section className="lg:py-16">
-    <div className="grid grid-cols-1 sm:grid-cols-12 mt-0 md:mt-2 md:ml-5">
+    <div className="grid grid-cols-1 sm:grid-cols-12 mt-0 md:mt-5 md:ml-5">
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             className="col-span-12 sm:col-span-4 place-self-center mt-4 sm:mt-0 text-center sm:text-left"
         >
-          <div className="rounded-full w-[250px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[240px] lg:h-[240px] xl:w-[400px] xl:h-[300px] mt-7 sm:mt-10 lg:mt-0 mx-auto sm:mx-0 mb-0 md:mb-10">
+          <div className="rounded-full w-[250px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[300px] mt-7 sm:mt-0 xl:mt-0 mx-auto sm:mx-0 mb-0 md:mb-10">
   <Image
     src="/weddingLogo2.png"
     alt="logo image"

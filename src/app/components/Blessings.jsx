@@ -23,11 +23,6 @@ const BlessingsPage = () => {
 
   const Blessings = [
     {
-      text: " מזל טוב לחני ומענדי! שתזכו לחיים מתוקים כמו הדבש, אהבה עמוקה כמו האוקיינוס, ושלום ושמחה שישרים כמו הרים",
-      backgroundColor: "#cd9484",
-      from: "ChatGPT 3.5",
-    },
-    {
       text: "מזל טוב!! ברגע זה שבו הקיץ משתיק את קולו והלב רוקד בחופש, תהיה כל רגע בו כמו תרגיל בשורות אינסופיות של פואמות מרגשות",
       backgroundColor: "#8B716A",
       from: "רבקה ליפסקר",
@@ -41,6 +36,11 @@ const BlessingsPage = () => {
       text: "ביום הגדול הזה, אנו שמחות לברך אתכם באהבה ובשמחה. תהיו מאושרים כמו שאתם, ויהיו ימיכם מלאים באהבה, שלום ושפע",
       backgroundColor: "#302f2f",
       from: "רישי ושרי",
+    },
+    {
+      text: " מזל טוב לחני ומענדי! שתזכו לחיים מתוקים כמו הדבש, אהבה עמוקה כמו האוקיינוס, ושלום ושמחה שישרים כמו הרים",
+      backgroundColor: "#cd9484",
+      from: "ChatGPT 3.5",
     },
   ];
 
@@ -70,7 +70,7 @@ const BlessingsPage = () => {
               className="flex flex-col text-center justify-center items-center px-5 py-0 h-auto w-auto md:w-auto md:h-[300px] md:mx-[150px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl"
               style={{ background: blessing.backgroundColor }}
             >
-              <h1 className="text-xs md:text-3xl px-[25px] py-[10px] md:p-1 font-bold bg-clip-text bg-gradient-to-r text-slate-100 hover:text-slate-200 m-2 md:m-4">
+              <h1 className="text-xs md:text-2xl xl:text-3xl px-[25px] py-[10px] md:p-1 font-bold bg-clip-text bg-gradient-to-r text-slate-100 hover:text-slate-200 m-2 md:m-4">
                 {blessing.text}
                 <span className="block mt-4 text-lg md:text-xl">{blessing.from}</span>
               </h1>
