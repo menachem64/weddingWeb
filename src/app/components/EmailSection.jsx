@@ -44,7 +44,7 @@ const EmailSection = () => {
         if (response.ok) {
           const resData = await response.json();
           console.log("Message sent.");
-          toast.success("Email sent successfully!");
+          toast.success("Message sent successfully!");
           setEmailSubmitted(true);
         } else {
           toast.error("Failed to send message");
@@ -109,10 +109,10 @@ const EmailSection = () => {
               </label>
               <input
                 name="email"
-                type="email"
+                type="text"
                 id="email"
                 required
-                className="text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-800 text-sm rounded-lg block w-full p-2.5"
                 placeholder="blessing@gmail.com"
               />
             </div>

@@ -133,6 +133,9 @@
   animation: myAnimation 1s ease-in-out forwards;
   animation-delay: 0.5s; /* עיכוב של 0.5 שניות לפני תחילת האנימציה */
 }
+.letter:hover {
+  animation: reverseAnimation 1s ease-in-out forwards;
+}
 
 .wrapper:not(:hover) .letter {
   animation: reverseAnimation 1s ease-in-out forwards;
