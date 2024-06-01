@@ -67,7 +67,7 @@ const BlessingsPage = () => {
         {Blessings.map((blessing, index) => (
           <SwiperSlide key={index}>
             <div
-              className="flex flex-col text-center justify-center items-center px-5 py-0 h-auto w-auto md:w-auto md:h-[300px] md:mx-[150px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl"
+              className="flex flex-col text-center justify-center items-center px-5 py-0 h-[170px] w-auto md:w-auto md:h-[300px] md:mx-[150px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl"
               style={{ background: blessing.backgroundColor }}
             >
               <h1 className="text-xs md:text-2xl xl:text-3xl px-[25px] py-[10px] md:p-1 font-bold bg-clip-text bg-gradient-to-r text-slate-100 hover:text-slate-200 m-2 md:m-4">
