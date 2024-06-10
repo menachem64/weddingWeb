@@ -12,7 +12,7 @@ const AnimatedNumbers = dynamic(
 );
 
 
-const AchievementsSection = () => {
+const TimerSection = () => {
 
   const targetDate = new Date('2024-07-16T18:00:00');
   const [timeLeft, setTimeLeft] = useState(
@@ -117,4 +117,4 @@ const achievementsList = [
   );
 };
 
-export default AchievementsSection;
+export default TimerSection;

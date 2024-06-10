@@ -6,7 +6,7 @@ import FlipCard from "./components/FlipCard";
 import BlessingsPage from "./components/Blessings";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
-import AchievementsSection from "./components/AchievementsSection";
+import TimerSection from "./components/TimerSection";
 import { Heebo } from "@next/font/google"
 
 
@@ -34,7 +34,7 @@ export default function startPage2() {
       <Navbar className={PapillonFont}/>
       <div className="container mt-1 mx-auto px-12 py-4">
         <HeroSection className={PapillonFont}/>
-        <AchievementsSection className={heebo.className}/>
+        <TimerSection className={heebo.className}/>
         <AboutSection  className={heebo.className}/>
         <FlipCard className={heebo.className}/>
         <BlessingsPage className={heebo.className}/>
