@@ -76,8 +76,8 @@ const achievementsList = [
 ];
 
   return (
-    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <h2 className="text-center text-3xl md:text-5xl font-bold bg-clip-text bg-gradient-to-r text-[#8B716A] mt-4 mb-4 md:mb-12">
+    <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16 mt-5 md:mt-0">
+      <h2 className="text-center text-3xl md:text-5xl font-bold bg-clip-text bg-gradient-to-r text-[#8B716A] mt-8 mb-8 md:mt-6 md:mb-12">
       :החתונה תערך בעוד
       </h2>
       <div className="bg-[#cd9484] #D3836D rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">

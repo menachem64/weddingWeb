@@ -36,7 +36,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="col-span-12 sm:col-span-8 mt-0 sm:mt-0 place-self-center text-center sm:text-left"
+            className="col-span-12 sm:col-span-8 mt-6 md:mt-0 place-self-center text-center sm:text-left"
         >
             {/* <h1 className="font-sans bg-clip-text bg-gradient-to-r text-[#B48B58] block">
     החתונה של מענדי וחני
