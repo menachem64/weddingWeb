@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <section className="lg:py-16">
-    <div className="grid grid-cols-1 sm:grid-cols-12 mt-0 md:mt-5 md:ml-5">
+    <div className="grid grid-cols-1 sm:grid-cols-12 mt-[70px] md:mt-5 md:ml-5">
         <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -73,7 +73,7 @@ const HeroSection = () => {
                 .אתר החתונה של מענדי וחני
             </p>
             </div> */}
-             <div className="flex flex-row items-center mt-[60px] md:m-0">
+             <div className="flex flex-row items-center mt-[60px] mb-[60px] md:m-0">
                 <Link
                     href="/#contact"
                     className="inline-block font-bold px-6 py-3 rounded-full bg-gradient-to-br bg-[#8B716A] hover:bg-[#7a6058] text-white mr-4 mt-0 md:mt-3"

@@ -7,7 +7,7 @@ const FlipCard = () => {
 
   return (
     <section id="projects">
-      <div className='block md:flex col-2 mb-[100px]'>
+      <div className='block md:flex col-2 mb-[150px] mt-[100px] md:mb-[100px] md:mt-0'>
 
         <h2 className="block md:hidden text-center justify-center text-4xl md:text-8xl font-bold bg-clip-text bg-gradient-to-r text-[#B48B58] mb-0 md:mb-12">
           ההזמנה לחתונה
