@@ -2,7 +2,8 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import { useState, useEffect } from 'react';
-
+import * as moment from 'moment';
+import 'moment-timezone';
 
 const AnimatedNumbers = dynamic(
   () => {
@@ -14,16 +15,20 @@ const AnimatedNumbers = dynamic(
 
 const TimerSection = () => {
 
-  const targetDate = new Date('2024-07-16T18:00:00');
+  // הגדר את אזור הזמן של תל אביב
+  const telAvivTime = moment().tz('Asia/Jerusalem');
+
+  const targetDate = moment.tz('2024-07-16T18:00:00', 'Asia/Jerusalem');
+  //const targetDate = telAvivTime.format('2024-07-16T18:00:00');
   const [timeLeft, setTimeLeft] = useState(
-    Math.floor((targetDate.getTime() - Date.now()) / 1000)
+    Math.floor((targetDate.toDate().getTime() - telAvivTime.toDate().getTime()) / 1000)
   );
   const [animationStarted, setAnimationStarted] = useState(true);
 
 
 useEffect(() => {
     const interval = setInterval(() => {
-      const newTimeLeft = Math.floor((targetDate.getTime() - Date.now()) / 1000);
+      const newTimeLeft = Math.floor((targetDate.toDate().getTime() - telAvivTime.toDate().getTime()) / 1000);
       setTimeLeft(newTimeLeft);
       console.log("timeLeft:", timeLeft);
     }, 1000);
