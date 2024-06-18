@@ -189,7 +189,14 @@ const EmailSection = () => {
         <div className="socials block md:flex md:flex-row md:gap-2 justify-end">
         <div className="socials flex flex-row gap-2 justify-end md:mt-0">
         <p className="text-[#8B716A] mt-5 text-xs md:text-sm xl:text-xl font-bold">0547611046</p>
-            <Image onClick={()=>{href="https://www.bitpay.co.il/app/me/65716433-7D0F-BDEE-FCB0-5D38DEAB216FEEDA"}} className="transition-transform duration-300 transform hover:scale-110" src="/bit-icon.png" alt="gmail Icon" width={50} height={50} href="https://www.bitpay.co.il/app/me/65716433-7D0F-BDEE-FCB0-5D38DEAB216FEEDA"/>
+        <Image 
+  onClick={() => { window.location.href = "https://www.bitpay.co.il/app/me/65716433-7D0F-BDEE-FCB0-5D38DEAB216FEEDA" }} 
+  className="transition-transform duration-300 transform hover:scale-110" 
+  src="/bit-icon.png" 
+  alt="gmail Icon" 
+  width={50} 
+  height={50} 
+/>
           </div>
           <div className="socials flex flex-row gap-2 justify-end">
             <p className="text-[#8B716A] mt-5 text-xs mdmd:text-sm xl:text-xl font-bold">mnsudak@gmail.com</p>
