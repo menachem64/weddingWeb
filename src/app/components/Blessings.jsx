@@ -35,14 +35,14 @@ const BlessingsPage = () => {
       textSize: "text-xs md:text-2xl xl:text-3xl",
       backgroundColor: "#8B716A",
       from: "הדס",
-      fromSize: "text-lg md:text-xl"
+      fromSize: "text-lg md:text-xl lg:text-2xl"
     },
     {
       text: "ביום הגדול הזה אנו שמחים לברך אתכם, תהיו מאושרים כמו שאתם, ויהיו ימיכם מלאים בברכה שלום ושפע",
       textSize: "text-xs md:text-2xl xl:text-3xl",
       backgroundColor: "#B48B58",
       from: "חיים ויצחק",
-      fromSize: "text-lg md:text-xl"
+      fromSize: "text-lg md:text-xl lg:text-2xl"
     },
     // {
     //   text: "מזל טוב לחני ומענדי! שתזכו לחיים מתוקים כמו הדבש, ולבנין עדי עד, בית של שלום ושמחה ונחת ",
@@ -56,7 +56,7 @@ const BlessingsPage = () => {
       textSize: "text-xs md:text-2xl xl:text-3xl",
       backgroundColor: "#cd9484",
       from: "רבקה ליפסקר",
-      fromSize: "text-lg md:text-xl"
+      fromSize: "text-lg md:text-xl lg:text-2xl"
     },
   ];
 
