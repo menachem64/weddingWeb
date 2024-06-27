@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'החתונה',
-  description: 'החתונה של מענדי וחני',
+  description: 'אתר החתונה של מענדי וחני',
   icons: {
     icon: '/w.ico'
   },

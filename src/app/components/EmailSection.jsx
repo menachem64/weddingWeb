@@ -97,7 +97,7 @@ const EmailSection = () => {
                 id="name"
                 required
                 className="font-medium text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-800 text-sm rounded-lg block w-full p-2.5"
-                placeholder="השם שלכם"
+                placeholder="שם"
               />
             </div>
             <div className="mb-6">
