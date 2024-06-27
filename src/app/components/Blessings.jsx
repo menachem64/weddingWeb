@@ -25,29 +25,34 @@ const BlessingsPage = () => {
     
     {
       text: "ביום הגדול הזה אנו שמחים לברך אתכם, תהיו מאושרים כמו שאתם, ויהיו ימיכם מלאים בברכה שלום ושפע",
+      textSize: "text-xs md:text-2xl xl:text-3xl",
       backgroundColor: "#B48B58",
       from: "חיים ויצחק",
     },
     {
       text: "מזל טוב מזל טוב אושר ועושר הצלחה בכל",
+      textSize: "text-xs md:text-2xl xl:text-3xl",
       backgroundColor: "#8B716A",
       from: "הדס",
     },
     {
       text: "מזל טוב לחני ומענדי! שתזכו לחיים מתוקים כמו הדבש, ולבנין עדי עד, בית של שלום ושמחה ונחת ",
+      textSize: "text-xs md:text-2xl xl:text-3xl",
       backgroundColor: "#cd9484",
       from: "יוסל'ה",
     },
     {
       text: "מזל טוב!! ברגע זה שבו הקיץ משתיק את קולו והלב רוקד בחופש, תהיה כל רגע בו כמו תרגיל בשורות אינסופיות של פואמות מרגשות",
+      textSize: "text-xs md:text-2xl xl:text-3xl",
       backgroundColor: "#8B716A",
       from: "רבקה ליפסקר",
     },
-    // {
-    //   text: "סודאק היקר, אחי, הגיע הרגע! סוף סוף אתה נכנס לסטטוס של נשוי. מי היה מאמין? נראה כאילו רק אתמול היינו מעבירים לילות שלמים ביחד, צוחקים על כל שטות ומעבירים את הסדרים. שתדע לך, שאתה מודל לחיקוי לכל אחד מאיתנו. תמיד ידעת להביא את האור והשמחה לכל מקום, ועכשיו תביא את כל זה גם לחיי הנישואים. אנחנו מאחלים לך חיים מלאים באהבה, אושר ושטות בריאה. שתמשיך להיות הבן אדם המיוחד שאתה ולהפיץ אור בכל מקום. אז תתחתן בכיף, תשמח, תרקוד, ותזכור שהחיים רק מתחילים! אוהבים ומעריכים תמיד, החברים לדירת התלמידים השלוחים",
-    //   backgroundColor: "#B48B58",
-    //   from: "אלטע שמאטע טראנטע",
-    // },
+    {
+      text: "סודאק היקר, אחי, הגיע הרגע! סוף סוף אתה נכנס לסטטוס של נשוי. מי היה מאמין? נראה כאילו רק אתמול היינו מעבירים לילות שלמים ביחד, צוחקים על כל שטות ומעבירים את הסדרים. שתדע לך, שאתה מודל לחיקוי לכל אחד מאיתנו. תמיד ידעת להביא את האור והשמחה לכל מקום, ועכשיו תביא את כל זה גם לחיי הנישואים. אנחנו מאחלים לך חיים מלאים באהבה, אושר ושטות בריאה. שתמשיך להיות הבן אדם המיוחד שאתה ולהפיץ אור בכל מקום. אז תתחתן בכיף, תשמח, תרקוד, ותזכור שהחיים רק מתחילים! אוהבים ומעריכים תמיד, החברים לדירת התלמידים השלוחים",
+      textSize: "text-[7px] md:text-[12px] xl:text-xl",
+      backgroundColor: "#B48B58",
+      from: "אלטע שמאטע טראנטע",
+    },
  
   ];
 
@@ -77,7 +82,7 @@ const BlessingsPage = () => {
               className="flex flex-col text-center justify-center items-center px-5 py-0 h-[170px] w-auto md:w-auto md:h-[300px] md:mx-[150px] shadow-2xl rounded-3xl transform transition-all duration-500 hover:scale-105 hover:shadow-xl"
               style={{ background: blessing.backgroundColor }}
             >
-              <h1 className="text-xs md:text-2xl xl:text-3xl px-[25px] py-[10px] md:p-1 font-bold bg-clip-text bg-gradient-to-r text-slate-100 hover:text-slate-200 m-2 md:m-4">
+              <h1 className={`${blessing.textSize} px-[25px] py-[10px] md:p-1 font-bold bg-clip-text bg-gradient-to-r text-slate-100 hover:text-slate-200 m-2 md:m-4`}>
                 {blessing.text}
                 <span className="block mt-4 text-lg md:text-xl">{blessing.from}</span>
               </h1>

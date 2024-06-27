@@ -145,7 +145,7 @@ const EmailSection = () => {
                 id="message"
                 required
                 className="text-right bg-[#f9f9f9] border border-[#33353F] placeholder-[#9CA2A9] text-gray-800 text-sm rounded-lg block w-full p-2.5"
-                placeholder="אם אתם רוצים שנפרסם באתר אז עד עשרים מילים"
+                placeholder="אם אתם רוצים שנפרסם באתר אז לא ארוך מידי"
               />
             </div>
             <button
