@@ -21,8 +21,16 @@ const BlessingsPage = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 
+
   const Blessings = [
 
+     {
+      text: "למענדי היקר - חבר שהוא כמו אח! מזל טוב ענק מכל הלב❤️🩵❤️",
+      textSize: "text-xs md:text-2xl xl:text-3xl",
+      backgroundColor: "#cd9484",
+      from: "יוסי",
+      fromSize: "text-lg md:text-xl lg:text-2xl"
+     },
      {
       text: "סודאק היקר, אחי, הגיע הרגע! סוף סוף אתה נכנס לסטטוס של נשוי. מי היה מאמין? נראה כאילו רק אתמול היינו מעבירים לילות שלמים ביחד, צוחקים על כל שטות ומעבירים את הסדרים. אנחנו מאחלים לך חיים מלאים באהבה, אושר ושטות בריאה. שתמשיך להיות הבן אדם המיוחד שאתה ולהפיץ אור בכל מקום. אז תתחתן בכיף, תשמח, תרקוד, ותזכור שהחיים רק מתחילים! אוהבים ומעריכים תמיד",
       textSize: "text-[7px] md:text-[12px] xl:text-xl",
