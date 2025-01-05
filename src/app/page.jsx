@@ -1,4 +1,4 @@
-import HeroSection from "./components/HeroSection";
+import Wellcome from "./components/Wellcome";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import FlipCard from "./components/FlipCard";
@@ -30,10 +30,10 @@ const PetelBoldFont = '/PetelBold.ttf';
 
 export default function startPage2() {
   return (
-    <main className="flex min-h-screen flex-col bg-custom-bg bg-cover bg-center bg-[#F0E4DB]">
+    <main className="flex min-h-screen flex-col bg-custom-bg bg-cover bg-center bg-[#fdf3ec]">
       <Navbar className={PapillonFont}/>
       <div className="container mt-1 mx-auto px-12 py-4">
-        <HeroSection className={PapillonFont}/>
+        <Wellcome className={PapillonFont}/>
         <TimerSection className={heebo.className}/>
         <AboutSection  className={heebo.className}/>
         <FlipCard className={heebo.className}/>

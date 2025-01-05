@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const PetelBoldFont = '/PetelBold.ttf';
 
-const HeroSection = () => {
+const Wellcome = () => {
 
   return (
     <section className="lg:py-16">
@@ -95,4 +95,4 @@ const HeroSection = () => {
    );
 };
 
-export default HeroSection;
+export default Wellcome;
