@@ -30,7 +30,7 @@ const PetelBoldFont = '/PetelBold.ttf';
 
 export default function startPage2() {
   return (
-    <main className="flex min-h-screen flex-col bg-custom-bg bg-cover bg-center bg-[#fdf3ec]">
+    <main className="flex min-h-screen flex-col bg-custom-bg bg-cover bg-center bg-[#f5f2ef]">
       <Navbar className={PapillonFont}/>
       <div className="container mt-1 mx-auto px-12 py-4">
         <Wellcome className={PapillonFont}/>
